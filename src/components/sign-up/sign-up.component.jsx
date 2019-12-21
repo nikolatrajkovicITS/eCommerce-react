@@ -51,8 +51,8 @@ class SignUp extends React.Component {
       <div className="sign-up">
         <h2 className="title">I do not have a account</h2>
         <span>Sign up with you email and password</span>
-        <form onSubmit={this.handleSubmit} className="sign-up-from">
-          <FromInput
+        <form onSubmit={this.handleSubmit} className="sing-up-form">
+          <FormInput
             type="text"
             name="displayName"
             value={displayName}
@@ -60,7 +60,7 @@ class SignUp extends React.Component {
             label="Display Name"
             required
           />
-          <FromInput
+          <FormInput
             type="email"
             name="email"
             value={email}
@@ -68,7 +68,7 @@ class SignUp extends React.Component {
             label="Email"
             required
           />
-          <FromInput
+          <FormInput
             type="password"
             name="password"
             value={password}
@@ -76,7 +76,7 @@ class SignUp extends React.Component {
             label="Password"
             required
           />
-          <FromInput
+          <FormInput
             type="password"
             name="confirmPassword"
             value={confirmPassword}
