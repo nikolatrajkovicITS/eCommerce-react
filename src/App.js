@@ -11,7 +11,6 @@ import SignInAndSignUp from "./pages/signin-and-signup/signin-and-signup.compone
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
-import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 import "./App.css";
 
 class App extends React.Component {
