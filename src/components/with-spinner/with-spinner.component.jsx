@@ -8,6 +8,8 @@ const WithSpinner = WrappedComponent => ({ isLoading, ...otherProps }) => {
       <SpinnerContainer></SpinnerContainer>
     </SpinnerOverlay>
   ) : (
-    <WrappedComponent />
+    <WrappedComponent {...otherProps} />
   );
 };
+
+export default WithSpinner;
